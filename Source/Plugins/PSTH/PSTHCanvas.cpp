@@ -270,7 +270,7 @@ void PSTHCanvas::update()
 
 					plotCounter++;
 					numCols++;
-					numCols = min(maxUnitsPerRow, numCols);
+					numCols = jmin(maxUnitsPerRow, numCols);
 
 					if (plotCounter >= maxUnitsPerRow)
 					{
@@ -285,7 +285,7 @@ void PSTHCanvas::update()
 						electrodeID,
 						channels[u],
 						u, row, rasterMode, inPanMode);
-					numCols = max(numCols, u);
+					numCols = jmax(numCols, u);
 
 				}
 				newplot->setSmoothState(smoothPlots);
@@ -316,7 +316,7 @@ void PSTHCanvas::update()
 							plotCounter, row, rasterMode, inPanMode);
 						plotCounter++;
 						numCols++;
-						numCols = min(maxUnitsPerRow, numCols);
+						numCols = jmin(maxUnitsPerRow, numCols);
 
 						if (plotCounter >= maxUnitsPerRow)
 						{
@@ -331,7 +331,7 @@ void PSTHCanvas::update()
 							electrodeID,
 							processor->trialCircularBuffer->getUnitID(e, u),
 							offset + u, row, rasterMode, inPanMode);
-						numCols = max(numCols, offset + u);
+						numCols = jmax(numCols, offset + u);
 					}
 					newplot->setSmoothState(smoothPlots);
 					newplot->setAutoRescale(autoRescale);

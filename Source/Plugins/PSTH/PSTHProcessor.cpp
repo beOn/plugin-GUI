@@ -33,6 +33,7 @@ PSTHProcessor::PSTHProcessor()
 	: GenericProcessor("PSTH Sink"), displayBufferSize(5), redrawRequested(false)
 
 {
+    setProcessorType (PROCESSOR_TYPE_SINK);
 	trialCircularBuffer = nullptr;
 	isRecording = false;
 	saveEyeTracking = saveTTLs = saveNetworkEvents = false;
