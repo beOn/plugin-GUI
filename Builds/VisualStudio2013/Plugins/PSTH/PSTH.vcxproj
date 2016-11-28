@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D5D58DAC-582B-4F39-9385-E1814D56BCA0}</ProjectGuid>
-    <RootNamespace>NetworkEvents</RootNamespace>
+    <ProjectGuid>{C392BF75-BA32-4853-9752-E468B85C25D3}</ProjectGuid>
+    <RootNamespace>PSTH</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,26 +75,19 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>ZEROMQ;OEPLUGIN;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_API=__declspec(dllimport);JUCER_VS2013_78A5020=1;JUCE_APP_VERSION=0.3.5;JUCE_APP_VERSION_HEX=0x305;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../../../Resources/windows-libs/ZeroMQ/include;..\..\..\..\JuceLibraryCode;..\..\..\..\JuceLibraryCode\modules;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(GUIDir);../../../../Resources/windows-libs/ZeroMQ/lib_x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libzmq-v120-mt-4_0_4.lib;open-ephys.lib;setupapi.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>ZEROMQ;OEPLUGIN;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_API=__declspec(dllimport);JUCER_VS2013_78A5020=1;JUCE_APP_VERSION=0.3.5;JUCE_APP_VERSION_HEX=0x305;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../../../Resources/windows-libs/ZeroMQ/include;..\..\..\..\JuceLibraryCode;..\..\..\..\JuceLibraryCode\modules;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(GUIDir);../../../../Resources/windows-libs/ZeroMQ/lib_x64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libzmq-v120-mt-4_0_4.lib;open-ephys.lib;setupapi.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -104,15 +97,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>ZEROMQ;OEPLUGIN;WIN32;_WINDOWS;NDEBUG;JUCE_API=__declspec(dllimport);JUCER_VS2013_78A5020=1;JUCE_APP_VERSION=0.3.5;JUCE_APP_VERSION_HEX=0x305;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../../../Resources/windows-libs/ZeroMQ/include;..\..\..\..\JuceLibraryCode;..\..\..\..\JuceLibraryCode\modules;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(GUIDir);../../../../Resources/windows-libs/ZeroMQ/lib_x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libzmq-v120-mt-4_0_4.lib;open-ephys.lib;setupapi.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,27 +111,40 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>ZEROMQ;OEPLUGIN;WIN32;_WINDOWS;NDEBUG;JUCE_API=__declspec(dllimport);JUCER_VS2013_78A5020=1;JUCE_APP_VERSION=0.3.5;JUCE_APP_VERSION_HEX=0x305;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../../../../Resources/windows-libs/ZeroMQ/include;..\..\..\..\JuceLibraryCode;..\..\..\..\JuceLibraryCode\modules;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(GUIDir);../../../../Resources/windows-libs/ZeroMQ/lib_x64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libzmq-v120-mt-4_0_4.lib;open-ephys.lib;setupapi.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Plugins\Common\ContinuousCircularBuffer.cpp" />
     <ClCompile Include="..\..\..\..\Source\Plugins\Common\StringTS.cpp" />
-    <ClCompile Include="..\..\..\..\Source\Plugins\NetworkEvents\NetworkEvents.cpp" />
-    <ClCompile Include="..\..\..\..\Source\Plugins\NetworkEvents\NetworkEventsEditor.cpp" />
-    <ClCompile Include="..\..\..\..\Source\Plugins\NetworkEvents\OpenEphysLib.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\GenericPlot.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\MatlabLikePlot.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\PSTHCanvas.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\PSTHConditionList.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\PSTHDisplay.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\PSTHEditor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\OpenEphysLib.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\PSTHProcessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\TrialCircularBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\PSTH\XYLine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Plugins\Common\ContinuousCircularBuffer.h" />
     <ClInclude Include="..\..\..\..\Source\Plugins\Common\StringTS.h" />
-    <ClInclude Include="..\..\..\..\Source\Plugins\NetworkEvents\NetworkEvents.h" />
-    <ClInclude Include="..\..\..\..\Source\Plugins\NetworkEvents\NetworkEventsEditor.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\GenericPlot.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\MatlabLikePlot.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\PSTHCanvas.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\PSTHCommon.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\PSTHConditionList.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\PSTHDisplay.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\PSTHEditor.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\PSTHProcessor.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\TrialCircularBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\PSTH\XYLine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
