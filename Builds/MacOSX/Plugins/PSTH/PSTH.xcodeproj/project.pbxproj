@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E86AD03F1DECAE5600B9C9DC /* GenericPlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD02A1DECAE5600B9C9DC /* GenericPlot.cpp */; };
+		E86AD0401DECAE5600B9C9DC /* Makefile.example in Resources */ = {isa = PBXBuildFile; fileRef = E86AD02C1DECAE5600B9C9DC /* Makefile.example */; };
+		E86AD0411DECAE5600B9C9DC /* MatlabLikePlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD02D1DECAE5600B9C9DC /* MatlabLikePlot.cpp */; };
+		E86AD0421DECAE5600B9C9DC /* OpenEphysLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD02F1DECAE5600B9C9DC /* OpenEphysLib.cpp */; };
+		E86AD0431DECAE5600B9C9DC /* PSTHCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0301DECAE5600B9C9DC /* PSTHCanvas.cpp */; };
+		E86AD0441DECAE5600B9C9DC /* PSTHConditionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0331DECAE5600B9C9DC /* PSTHConditionList.cpp */; };
+		E86AD0451DECAE5600B9C9DC /* PSTHDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0351DECAE5600B9C9DC /* PSTHDisplay.cpp */; };
+		E86AD0461DECAE5600B9C9DC /* PSTHEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0371DECAE5600B9C9DC /* PSTHEditor.cpp */; };
+		E86AD0471DECAE5600B9C9DC /* PSTHProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0391DECAE5600B9C9DC /* PSTHProcessor.cpp */; };
+		E86AD0481DECAE5600B9C9DC /* TrialCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD03B1DECAE5600B9C9DC /* TrialCircularBuffer.cpp */; };
+		E86AD0491DECAE5600B9C9DC /* XYLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD03D1DECAE5600B9C9DC /* XYLine.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E86AD0211DECAE0D00B9C9DC /* PSTH.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSTH.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86AD0241DECAE0D00B9C9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86AD02A1DECAE5600B9C9DC /* GenericPlot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GenericPlot.cpp; path = ../../../../Source/Plugins/PSTH/GenericPlot.cpp; sourceTree = "<group>"; };
+		E86AD02B1DECAE5600B9C9DC /* GenericPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericPlot.h; path = ../../../../Source/Plugins/PSTH/GenericPlot.h; sourceTree = "<group>"; };
+		E86AD02C1DECAE5600B9C9DC /* Makefile.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.example; path = ../../../../Source/Plugins/PSTH/Makefile.example; sourceTree = "<group>"; };
+		E86AD02D1DECAE5600B9C9DC /* MatlabLikePlot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatlabLikePlot.cpp; path = ../../../../Source/Plugins/PSTH/MatlabLikePlot.cpp; sourceTree = "<group>"; };
+		E86AD02E1DECAE5600B9C9DC /* MatlabLikePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatlabLikePlot.h; path = ../../../../Source/Plugins/PSTH/MatlabLikePlot.h; sourceTree = "<group>"; };
+		E86AD02F1DECAE5600B9C9DC /* OpenEphysLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenEphysLib.cpp; path = ../../../../Source/Plugins/PSTH/OpenEphysLib.cpp; sourceTree = "<group>"; };
+		E86AD0301DECAE5600B9C9DC /* PSTHCanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSTHCanvas.cpp; path = ../../../../Source/Plugins/PSTH/PSTHCanvas.cpp; sourceTree = "<group>"; };
+		E86AD0311DECAE5600B9C9DC /* PSTHCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTHCanvas.h; path = ../../../../Source/Plugins/PSTH/PSTHCanvas.h; sourceTree = "<group>"; };
+		E86AD0321DECAE5600B9C9DC /* PSTHCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTHCommon.h; path = ../../../../Source/Plugins/PSTH/PSTHCommon.h; sourceTree = "<group>"; };
+		E86AD0331DECAE5600B9C9DC /* PSTHConditionList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSTHConditionList.cpp; path = ../../../../Source/Plugins/PSTH/PSTHConditionList.cpp; sourceTree = "<group>"; };
+		E86AD0341DECAE5600B9C9DC /* PSTHConditionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTHConditionList.h; path = ../../../../Source/Plugins/PSTH/PSTHConditionList.h; sourceTree = "<group>"; };
+		E86AD0351DECAE5600B9C9DC /* PSTHDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSTHDisplay.cpp; path = ../../../../Source/Plugins/PSTH/PSTHDisplay.cpp; sourceTree = "<group>"; };
+		E86AD0361DECAE5600B9C9DC /* PSTHDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTHDisplay.h; path = ../../../../Source/Plugins/PSTH/PSTHDisplay.h; sourceTree = "<group>"; };
+		E86AD0371DECAE5600B9C9DC /* PSTHEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSTHEditor.cpp; path = ../../../../Source/Plugins/PSTH/PSTHEditor.cpp; sourceTree = "<group>"; };
+		E86AD0381DECAE5600B9C9DC /* PSTHEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTHEditor.h; path = ../../../../Source/Plugins/PSTH/PSTHEditor.h; sourceTree = "<group>"; };
+		E86AD0391DECAE5600B9C9DC /* PSTHProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSTHProcessor.cpp; path = ../../../../Source/Plugins/PSTH/PSTHProcessor.cpp; sourceTree = "<group>"; };
+		E86AD03A1DECAE5600B9C9DC /* PSTHProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTHProcessor.h; path = ../../../../Source/Plugins/PSTH/PSTHProcessor.h; sourceTree = "<group>"; };
+		E86AD03B1DECAE5600B9C9DC /* TrialCircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrialCircularBuffer.cpp; path = ../../../../Source/Plugins/PSTH/TrialCircularBuffer.cpp; sourceTree = "<group>"; };
+		E86AD03C1DECAE5600B9C9DC /* TrialCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrialCircularBuffer.h; path = ../../../../Source/Plugins/PSTH/TrialCircularBuffer.h; sourceTree = "<group>"; };
+		E86AD03D1DECAE5600B9C9DC /* XYLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XYLine.cpp; path = ../../../../Source/Plugins/PSTH/XYLine.cpp; sourceTree = "<group>"; };
+		E86AD03E1DECAE5600B9C9DC /* XYLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYLine.h; path = ../../../../Source/Plugins/PSTH/XYLine.h; sourceTree = "<group>"; };
+		E86AD04A1DECAEA300B9C9DC /* Plugin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin.xcconfig; sourceTree = "<group>"; };
+		E86AD04B1DECAEA300B9C9DC /* Plugin_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin_Debug.xcconfig; sourceTree = "<group>"; };
+		E86AD04C1DECAEA300B9C9DC /* Plugin_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin_Release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E86AD01E1DECAE0D00B9C9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E86AD0181DECAE0D00B9C9DC = {
+			isa = PBXGroup;
+			children = (
+				E86AD04D1DECAEA300B9C9DC /* Config */,
+				E86AD02A1DECAE5600B9C9DC /* GenericPlot.cpp */,
+				E86AD02B1DECAE5600B9C9DC /* GenericPlot.h */,
+				E86AD02C1DECAE5600B9C9DC /* Makefile.example */,
+				E86AD02D1DECAE5600B9C9DC /* MatlabLikePlot.cpp */,
+				E86AD02E1DECAE5600B9C9DC /* MatlabLikePlot.h */,
+				E86AD02F1DECAE5600B9C9DC /* OpenEphysLib.cpp */,
+				E86AD0301DECAE5600B9C9DC /* PSTHCanvas.cpp */,
+				E86AD0311DECAE5600B9C9DC /* PSTHCanvas.h */,
+				E86AD0321DECAE5600B9C9DC /* PSTHCommon.h */,
+				E86AD0331DECAE5600B9C9DC /* PSTHConditionList.cpp */,
+				E86AD0341DECAE5600B9C9DC /* PSTHConditionList.h */,
+				E86AD0351DECAE5600B9C9DC /* PSTHDisplay.cpp */,
+				E86AD0361DECAE5600B9C9DC /* PSTHDisplay.h */,
+				E86AD0371DECAE5600B9C9DC /* PSTHEditor.cpp */,
+				E86AD0381DECAE5600B9C9DC /* PSTHEditor.h */,
+				E86AD0391DECAE5600B9C9DC /* PSTHProcessor.cpp */,
+				E86AD03A1DECAE5600B9C9DC /* PSTHProcessor.h */,
+				E86AD03B1DECAE5600B9C9DC /* TrialCircularBuffer.cpp */,
+				E86AD03C1DECAE5600B9C9DC /* TrialCircularBuffer.h */,
+				E86AD03D1DECAE5600B9C9DC /* XYLine.cpp */,
+				E86AD03E1DECAE5600B9C9DC /* XYLine.h */,
+				E86AD0231DECAE0D00B9C9DC /* PSTH */,
+				E86AD0221DECAE0D00B9C9DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E86AD0221DECAE0D00B9C9DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E86AD0211DECAE0D00B9C9DC /* PSTH.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E86AD0231DECAE0D00B9C9DC /* PSTH */ = {
+			isa = PBXGroup;
+			children = (
+				E86AD0241DECAE0D00B9C9DC /* Info.plist */,
+			);
+			path = PSTH;
+			sourceTree = "<group>";
+		};
+		E86AD04D1DECAEA300B9C9DC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E86AD04A1DECAEA300B9C9DC /* Plugin.xcconfig */,
+				E86AD04B1DECAEA300B9C9DC /* Plugin_Debug.xcconfig */,
+				E86AD04C1DECAEA300B9C9DC /* Plugin_Release.xcconfig */,
+			);
+			name = Config;
+			path = /Users/benacland/devdir/openEphysGUI/Builds/MacOSX/Plugins/ArduinoOutput/../Config;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E86AD0201DECAE0D00B9C9DC /* PSTH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86AD0271DECAE0D00B9C9DC /* Build configuration list for PBXNativeTarget "PSTH" */;
+			buildPhases = (
+				E86AD01D1DECAE0D00B9C9DC /* Sources */,
+				E86AD01E1DECAE0D00B9C9DC /* Frameworks */,
+				E86AD01F1DECAE0D00B9C9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSTH;
+			productName = PSTH;
+			productReference = E86AD0211DECAE0D00B9C9DC /* PSTH.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E86AD0191DECAE0D00B9C9DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Open Ephys";
+				TargetAttributes = {
+					E86AD0201DECAE0D00B9C9DC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E86AD01C1DECAE0D00B9C9DC /* Build configuration list for PBXProject "PSTH" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E86AD0181DECAE0D00B9C9DC;
+			productRefGroup = E86AD0221DECAE0D00B9C9DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E86AD0201DECAE0D00B9C9DC /* PSTH */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E86AD01F1DECAE0D00B9C9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86AD0401DECAE5600B9C9DC /* Makefile.example in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E86AD01D1DECAE0D00B9C9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86AD0421DECAE5600B9C9DC /* OpenEphysLib.cpp in Sources */,
+				E86AD0471DECAE5600B9C9DC /* PSTHProcessor.cpp in Sources */,
+				E86AD0441DECAE5600B9C9DC /* PSTHConditionList.cpp in Sources */,
+				E86AD0411DECAE5600B9C9DC /* MatlabLikePlot.cpp in Sources */,
+				E86AD0491DECAE5600B9C9DC /* XYLine.cpp in Sources */,
+				E86AD0461DECAE5600B9C9DC /* PSTHEditor.cpp in Sources */,
+				E86AD0431DECAE5600B9C9DC /* PSTHCanvas.cpp in Sources */,
+				E86AD03F1DECAE5600B9C9DC /* GenericPlot.cpp in Sources */,
+				E86AD0451DECAE5600B9C9DC /* PSTHDisplay.cpp in Sources */,
+				E86AD0481DECAE5600B9C9DC /* TrialCircularBuffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E86AD0251DECAE0D00B9C9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86AD04B1DECAEA300B9C9DC /* Plugin_Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E86AD0261DECAE0D00B9C9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86AD04C1DECAEA300B9C9DC /* Plugin_Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		E86AD0281DECAE0D00B9C9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PSTH/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "open-ephys.PSTH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E86AD0291DECAE0D00B9C9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PSTH/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "open-ephys.PSTH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E86AD01C1DECAE0D00B9C9DC /* Build configuration list for PBXProject "PSTH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86AD0251DECAE0D00B9C9DC /* Debug */,
+				E86AD0261DECAE0D00B9C9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86AD0271DECAE0D00B9C9DC /* Build configuration list for PBXNativeTarget "PSTH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86AD0281DECAE0D00B9C9DC /* Debug */,
+				E86AD0291DECAE0D00B9C9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E86AD0191DECAE0D00B9C9DC /* Project object */;
+}
