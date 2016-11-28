@@ -118,6 +118,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Plugins\Common\ContinuousCircularBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Plugins\Common\StringTS.cpp" />
     <ClCompile Include="..\..\..\..\Source\Plugins\SpikeSorter\OpenEphysLib.cpp" />
     <ClCompile Include="..\..\..\..\Source\Plugins\SpikeSorter\SpikeSortBoxes.cpp" />
     <ClCompile Include="..\..\..\..\Source\Plugins\SpikeSorter\SpikeSorter.cpp" />
@@ -125,6 +127,8 @@
     <ClCompile Include="..\..\..\..\Source\Plugins\SpikeSorter\SpikeSorterEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Plugins\Common\ContinuousCircularBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\Plugins\Common\StringTS.h" />
     <ClInclude Include="..\..\..\..\Source\Plugins\SpikeSorter\SpikeSortBoxes.h" />
     <ClInclude Include="..\..\..\..\Source\Plugins\SpikeSorter\SpikeSorter.h" />
     <ClInclude Include="..\..\..\..\Source\Plugins\SpikeSorter\SpikeSorterCanvas.h" />
