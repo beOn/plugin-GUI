@@ -305,6 +305,20 @@
                ReferencedContainer = "container:Plugins/SpikeSorter/SpikeSorter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E86AD0201DECAE0D00B9C9DC"
+               BuildableName = "PSTH.bundle"
+               BlueprintName = "PSTH"
+               ReferencedContainer = "container:Plugins/PSTH/PSTH.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
