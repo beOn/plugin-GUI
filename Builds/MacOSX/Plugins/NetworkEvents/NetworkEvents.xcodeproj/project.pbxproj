@@ -10,6 +10,8 @@
 		E1F5592F1C9B2A340035F88B /* NetworkEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F559291C9B2A340035F88B /* NetworkEvents.cpp */; };
 		E1F559301C9B2A340035F88B /* NetworkEventsEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F5592B1C9B2A340035F88B /* NetworkEventsEditor.cpp */; };
 		E1F559311C9B2A340035F88B /* OpenEphysLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F5592D1C9B2A340035F88B /* OpenEphysLib.cpp */; };
+		E86AD05D1DECBF0E00B9C9DC /* ContinuousCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0591DECBF0E00B9C9DC /* ContinuousCircularBuffer.cpp */; };
+		E86AD05E1DECBF0E00B9C9DC /* StringTS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD05B1DECBF0E00B9C9DC /* StringTS.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		E1F5592B1C9B2A340035F88B /* NetworkEventsEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkEventsEditor.cpp; sourceTree = "<group>"; };
 		E1F5592C1C9B2A340035F88B /* NetworkEventsEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkEventsEditor.h; sourceTree = "<group>"; };
 		E1F5592D1C9B2A340035F88B /* OpenEphysLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenEphysLib.cpp; sourceTree = "<group>"; };
+		E86AD0591DECBF0E00B9C9DC /* ContinuousCircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContinuousCircularBuffer.cpp; sourceTree = "<group>"; };
+		E86AD05A1DECBF0E00B9C9DC /* ContinuousCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinuousCircularBuffer.h; sourceTree = "<group>"; };
+		E86AD05B1DECBF0E00B9C9DC /* StringTS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringTS.cpp; sourceTree = "<group>"; };
+		E86AD05C1DECBF0E00B9C9DC /* StringTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 		E1F559111C9B29D20035F88B = {
 			isa = PBXGroup;
 			children = (
+				E86AD0581DECBF0E00B9C9DC /* Common */,
 				E1F559231C9B2A0B0035F88B /* Config */,
 				E1F5591C1C9B29D20035F88B /* NetworkEvents */,
 				E1F5591B1C9B29D20035F88B /* Products */,
@@ -84,6 +91,18 @@
 			);
 			name = Source;
 			path = ../../../../../Source/Plugins/NetworkEvents;
+			sourceTree = "<group>";
+		};
+		E86AD0581DECBF0E00B9C9DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E86AD0591DECBF0E00B9C9DC /* ContinuousCircularBuffer.cpp */,
+				E86AD05A1DECBF0E00B9C9DC /* ContinuousCircularBuffer.h */,
+				E86AD05B1DECBF0E00B9C9DC /* StringTS.cpp */,
+				E86AD05C1DECBF0E00B9C9DC /* StringTS.h */,
+			);
+			name = Common;
+			path = ../../../../Source/Plugins/Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +174,8 @@
 				E1F559301C9B2A340035F88B /* NetworkEventsEditor.cpp in Sources */,
 				E1F5592F1C9B2A340035F88B /* NetworkEvents.cpp in Sources */,
 				E1F559311C9B2A340035F88B /* OpenEphysLib.cpp in Sources */,
+				E86AD05E1DECBF0E00B9C9DC /* StringTS.cpp in Sources */,
+				E86AD05D1DECBF0E00B9C9DC /* ContinuousCircularBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

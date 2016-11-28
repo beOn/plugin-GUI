@@ -12,6 +12,8 @@
 		E1F559FC1C9B428E0035F88B /* SpikeSorter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F559F31C9B428E0035F88B /* SpikeSorter.cpp */; };
 		E1F559FD1C9B428E0035F88B /* SpikeSorterCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F559F51C9B428E0035F88B /* SpikeSorterCanvas.cpp */; };
 		E1F559FE1C9B428E0035F88B /* SpikeSorterEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1F559F71C9B428E0035F88B /* SpikeSorterEditor.cpp */; };
+		E86AD0641DECBF4100B9C9DC /* ContinuousCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0601DECBF4100B9C9DC /* ContinuousCircularBuffer.cpp */; };
+		E86AD0651DECBF4100B9C9DC /* StringTS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0621DECBF4100B9C9DC /* StringTS.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		E1F559F61C9B428E0035F88B /* SpikeSorterCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeSorterCanvas.h; sourceTree = "<group>"; };
 		E1F559F71C9B428E0035F88B /* SpikeSorterEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeSorterEditor.cpp; sourceTree = "<group>"; };
 		E1F559F81C9B428E0035F88B /* SpikeSorterEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeSorterEditor.h; sourceTree = "<group>"; };
+		E86AD0601DECBF4100B9C9DC /* ContinuousCircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContinuousCircularBuffer.cpp; sourceTree = "<group>"; };
+		E86AD0611DECBF4100B9C9DC /* ContinuousCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinuousCircularBuffer.h; sourceTree = "<group>"; };
+		E86AD0621DECBF4100B9C9DC /* StringTS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringTS.cpp; sourceTree = "<group>"; };
+		E86AD0631DECBF4100B9C9DC /* StringTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 		E1F559D81C9B42270035F88B = {
 			isa = PBXGroup;
 			children = (
+				E86AD05F1DECBF4100B9C9DC /* Common */,
 				E1F559EA1C9B42650035F88B /* Config */,
 				E1F559E31C9B42270035F88B /* SpikeSorter */,
 				E1F559E21C9B42270035F88B /* Products */,
@@ -94,6 +101,18 @@
 			);
 			name = Source;
 			path = ../../../../../Source/Plugins/SpikeSorter;
+			sourceTree = "<group>";
+		};
+		E86AD05F1DECBF4100B9C9DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E86AD0601DECBF4100B9C9DC /* ContinuousCircularBuffer.cpp */,
+				E86AD0611DECBF4100B9C9DC /* ContinuousCircularBuffer.h */,
+				E86AD0621DECBF4100B9C9DC /* StringTS.cpp */,
+				E86AD0631DECBF4100B9C9DC /* StringTS.h */,
+			);
+			name = Common;
+			path = ../../../../Source/Plugins/Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +184,10 @@
 				E1F559FB1C9B428E0035F88B /* SpikeSortBoxes.cpp in Sources */,
 				E1F559FD1C9B428E0035F88B /* SpikeSorterCanvas.cpp in Sources */,
 				E1F559FA1C9B428E0035F88B /* OpenEphysLib.cpp in Sources */,
+				E86AD0651DECBF4100B9C9DC /* StringTS.cpp in Sources */,
 				E1F559FE1C9B428E0035F88B /* SpikeSorterEditor.cpp in Sources */,
 				E1F559FC1C9B428E0035F88B /* SpikeSorter.cpp in Sources */,
+				E86AD0641DECBF4100B9C9DC /* ContinuousCircularBuffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

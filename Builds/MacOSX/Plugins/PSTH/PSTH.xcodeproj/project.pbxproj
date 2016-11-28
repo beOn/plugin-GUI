@@ -18,6 +18,8 @@
 		E86AD0471DECAE5600B9C9DC /* PSTHProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0391DECAE5600B9C9DC /* PSTHProcessor.cpp */; };
 		E86AD0481DECAE5600B9C9DC /* TrialCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD03B1DECAE5600B9C9DC /* TrialCircularBuffer.cpp */; };
 		E86AD0491DECAE5600B9C9DC /* XYLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD03D1DECAE5600B9C9DC /* XYLine.cpp */; };
+		E86AD0561DECBEFA00B9C9DC /* ContinuousCircularBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0521DECBEFA00B9C9DC /* ContinuousCircularBuffer.cpp */; };
+		E86AD0571DECBEFA00B9C9DC /* StringTS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86AD0541DECBEFA00B9C9DC /* StringTS.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		E86AD04A1DECAEA300B9C9DC /* Plugin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin.xcconfig; sourceTree = "<group>"; };
 		E86AD04B1DECAEA300B9C9DC /* Plugin_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin_Debug.xcconfig; sourceTree = "<group>"; };
 		E86AD04C1DECAEA300B9C9DC /* Plugin_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Plugin_Release.xcconfig; sourceTree = "<group>"; };
+		E86AD0521DECBEFA00B9C9DC /* ContinuousCircularBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContinuousCircularBuffer.cpp; sourceTree = "<group>"; };
+		E86AD0531DECBEFA00B9C9DC /* ContinuousCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinuousCircularBuffer.h; sourceTree = "<group>"; };
+		E86AD0541DECBEFA00B9C9DC /* StringTS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringTS.cpp; sourceTree = "<group>"; };
+		E86AD0551DECBEFA00B9C9DC /* StringTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTS.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		E86AD0181DECAE0D00B9C9DC = {
 			isa = PBXGroup;
 			children = (
+				E86AD0511DECBEFA00B9C9DC /* Common */,
 				E86AD04D1DECAEA300B9C9DC /* Config */,
 				E86AD02A1DECAE5600B9C9DC /* GenericPlot.cpp */,
 				E86AD02B1DECAE5600B9C9DC /* GenericPlot.h */,
@@ -116,6 +123,18 @@
 			name = Config;
 			path = /Users/benacland/devdir/openEphysGUI/Builds/MacOSX/Plugins/ArduinoOutput/../Config;
 			sourceTree = "<absolute>";
+		};
+		E86AD0511DECBEFA00B9C9DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E86AD0521DECBEFA00B9C9DC /* ContinuousCircularBuffer.cpp */,
+				E86AD0531DECBEFA00B9C9DC /* ContinuousCircularBuffer.h */,
+				E86AD0541DECBEFA00B9C9DC /* StringTS.cpp */,
+				E86AD0551DECBEFA00B9C9DC /* StringTS.h */,
+			);
+			name = Common;
+			path = ../../../../Source/Plugins/Common;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -191,6 +210,8 @@
 				E86AD0491DECAE5600B9C9DC /* XYLine.cpp in Sources */,
 				E86AD0461DECAE5600B9C9DC /* PSTHEditor.cpp in Sources */,
 				E86AD0431DECAE5600B9C9DC /* PSTHCanvas.cpp in Sources */,
+				E86AD0571DECBEFA00B9C9DC /* StringTS.cpp in Sources */,
+				E86AD0561DECBEFA00B9C9DC /* ContinuousCircularBuffer.cpp in Sources */,
 				E86AD03F1DECAE5600B9C9DC /* GenericPlot.cpp in Sources */,
 				E86AD0451DECAE5600B9C9DC /* PSTHDisplay.cpp in Sources */,
 				E86AD0481DECAE5600B9C9DC /* TrialCircularBuffer.cpp in Sources */,
@@ -251,6 +272,7 @@
 				E86AD0291DECAE0D00B9C9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
