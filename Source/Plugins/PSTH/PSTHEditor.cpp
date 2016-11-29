@@ -171,10 +171,10 @@ void PSTHEditor::visualizationMenu()
 	}
 
 	PopupMenu rangeTimeMenu, preRangeTimeMenu, postRangeTimeMenu;
-	double rangeTimes[4] = { 0.5, 1, 1.5, 2 };
+	double rangeTimes[5] = { 0.5, 1, 1.5, 2, 45. };
 	TrialCircularBufferParams params = processor->trialCircularBuffer->getParams();
 
-	for (int k = 0; k<4; k++)
+	for (int k = 0; k<5; k++)
 	{
 		String s = String(rangeTimes[k], 1) + " sec";
 		if (processor->trialCircularBuffer == nullptr)

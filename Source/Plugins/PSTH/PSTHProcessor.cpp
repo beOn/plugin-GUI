@@ -92,9 +92,9 @@ void PSTHProcessor::allocateTrialCircularBuffer()
 	params.numChannels = getNumInputs();
 	params.numTTLchannels = 8;
 	params.sampleRate = getSampleRate();
-	params.maxTrialTimeSeconds = 5.0;
-	params.preSec = 2;  // maximum
-	params.postSec = 2; // maximum
+	params.maxTrialTimeSeconds = 45.0;
+	params.preSec = 2;
+	params.postSec = 2;
 	params.maxTrialsInMemory = 200;
 	params.binResolutionMS = 1;
 	params.desiredSamplingRateHz = 600;
