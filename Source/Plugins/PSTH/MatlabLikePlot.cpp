@@ -316,6 +316,9 @@ void MatlabLikePlot::setRange(float xmin_, float xmax_, float ymin_, float ymax_
 
 	ymin = MIN(ymax_limit, MAX(ymin_limit,ymin_));
 	ymax = MAX(ymin_limit, MIN(ymax_limit,ymax_));
+    
+    // TODO: undo this hack...
+    xmax = 1.0;
 
 	// determine tick marks....
 	int numTicks = (getWidth() < 250) ? 5 : 7;
