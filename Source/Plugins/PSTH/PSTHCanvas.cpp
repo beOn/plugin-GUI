@@ -208,13 +208,11 @@ void PSTHCanvas::setRange(double xmin, double xmax, double ymin, double ymax, xy
 	}
 }
 
-
 void PSTHCanvas::refreshState()
 {
 	update();
 	resized();
 }
-
 
 void PSTHCanvas::update()
 {
@@ -372,7 +370,6 @@ void PSTHCanvas::update()
 	//processor->trialCircularBuffer->unlockPSTH();
 	conditionsList->updateConditionButtons();
 }
-
 
 void PSTHCanvas::resized()
 {
